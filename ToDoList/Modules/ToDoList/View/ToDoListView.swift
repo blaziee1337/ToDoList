@@ -236,5 +236,12 @@ extension TodoListViewController: UITableViewDelegate, UITableViewDataSource {
        }
 }
 
-
+extension TodoListViewController: EditTodoViewDelegateProtocol {
+    func didUpdateTodo(todo: ToDo?) {
+        presenter?.viewDidLoad()
+        tasksTableView.reloadData()
+    }
+    
+    
+}
 
