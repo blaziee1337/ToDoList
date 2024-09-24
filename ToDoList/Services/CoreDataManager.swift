@@ -18,7 +18,7 @@ protocol CoreDataManagerProtocol {
 final class CoreDataManager: CoreDataManagerProtocol {
     
     lazy var persistentContainer: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "TodoModel")
+        let container = NSPersistentContainer(name: "ToDoModel")
         container.loadPersistentStores { description, error in
             if let error = error {
                 fatalError("Failed to load Core Data stack: \(error)")
