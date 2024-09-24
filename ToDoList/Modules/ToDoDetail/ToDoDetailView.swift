@@ -24,7 +24,7 @@ final class TodoDetailViewController: UIViewController, TodoDetailViewProtocol {
     
     private let taskTitleTextField: UITextField = {
         let textField = UITextField()
-        textField.placeholder = "Task Title"
+        textField.placeholder = LocalizedStrings.taskTitle
         textField.borderStyle = .roundedRect
         textField.translatesAutoresizingMaskIntoConstraints = false
         return textField
@@ -32,7 +32,7 @@ final class TodoDetailViewController: UIViewController, TodoDetailViewProtocol {
     
     private let taskDescriptionTextField: UITextField = {
         let textField = UITextField()
-        textField.placeholder = "Task Description"
+        textField.placeholder = LocalizedStrings.taskDesctiption
         textField.borderStyle = .roundedRect
         textField.translatesAutoresizingMaskIntoConstraints = false
         return textField
@@ -46,14 +46,14 @@ final class TodoDetailViewController: UIViewController, TodoDetailViewProtocol {
     
     private let doneLabel: UILabel = {
         let label = UILabel()
-        label.text = "Completed"
+        label.text = LocalizedStrings.completedTask
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
     private let saveButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Save", for: .normal)
+        button.setTitle(LocalizedStrings.saveButton, for: .normal)
         button.backgroundColor = .systemBlue
         button.setTitleColor(.white, for: .normal)
         button.layer.cornerRadius = 8

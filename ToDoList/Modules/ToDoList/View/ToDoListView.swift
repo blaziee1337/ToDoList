@@ -37,7 +37,7 @@ final class TodoListViewController: UIViewController, ToDoListViewProtocol {
     private let taskLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Today's Task"
+        label.text = LocalizedStrings.todayTasks
         label.font = .systemFont(ofSize: 18, weight: .semibold)
         return label
     }()
@@ -54,14 +54,14 @@ final class TodoListViewController: UIViewController, ToDoListViewProtocol {
         button.translatesAutoresizingMaskIntoConstraints = false
         button.backgroundColor = UIColor.systemBlue.withAlphaComponent(0.1)
         button.setTitleColor(.systemBlue, for: .normal)
-        button.setTitle("+ New Task", for: .normal)
+        button.setTitle(LocalizedStrings.newTasks, for: .normal)
         button.layer.cornerRadius = 10
         return button
     }()
     
-    private let allTasksButton = TaskButton(title: "All", count: 0)
-    private let openTasksButton = TaskButton(title: "Open", count: 0)
-    private let closedTasksButton = TaskButton(title: "Closed", count: 0)
+    private let allTasksButton = TaskButton(title: LocalizedStrings.allTasks, count: 0)
+    private let openTasksButton = TaskButton(title: LocalizedStrings.openTasks, count: 0)
+    private let closedTasksButton = TaskButton(title: LocalizedStrings.closedTasks, count: 0)
     
     private let dividerTask: UIView = {
         let view = UIView()
@@ -168,7 +168,7 @@ final class TodoListViewController: UIViewController, ToDoListViewProtocol {
     
     private func updateTaskCounts() {
         
-        allTasksButton.configure(title: "All")
+        allTasksButton.configure(title: LocalizedStrings.allTasks)
         allTasksButton.updateCount("\(todos.count)")
         allTasksButton.setSelected(filteredTodos == todos)
         

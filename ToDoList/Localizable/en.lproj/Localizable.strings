@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  ToDoList
+
+  Created by Halil Yavuz on 25.09.2024.
+  
+*/
+
+"today_tasks" = "Today's Task";
+"new_tasks" = "+ New Task";
+"all" = "All";
+"open" = "Open";
+"closed" = "Closed";
+"task_title" = "Task Title";
+"task_description" = "Task Description";
+"completed" = "Completed";
+"save" = "Save";
