@@ -100,7 +100,6 @@ final class TodoListViewController: UIViewController, ToDoListViewProtocol {
     private func updateDateLabel() {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "EEEE, d MMMM"
-        dateFormatter.locale = Locale(identifier: "en_US")
         dateLabel.text = dateFormatter.string(from: Date())
     }
     
@@ -110,12 +109,12 @@ final class TodoListViewController: UIViewController, ToDoListViewProtocol {
         closedTasksButton.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             taskLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 25),
-            taskLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 30),
+            taskLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10),
             
             dateLabel.topAnchor.constraint(equalTo: taskLabel.bottomAnchor, constant: 5),
             dateLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 25),
             
-            newTaskButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 30),
+            newTaskButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10),
             newTaskButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -25),
             newTaskButton.widthAnchor.constraint(equalToConstant: 130),
             newTaskButton.heightAnchor.constraint(equalToConstant: 40),

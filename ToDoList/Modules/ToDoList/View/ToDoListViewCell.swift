@@ -92,14 +92,13 @@ final class TodoTableViewCell: UITableViewCell {
             todoDescriptionLabel.topAnchor.constraint(equalTo: todoLabel.bottomAnchor, constant: 10),
             todoDescriptionLabel.bottomAnchor.constraint(lessThanOrEqualTo: divider.topAnchor, constant: -5),
             
-          //  divider.topAnchor.constraint(equalTo: todoDescriptionLabel.bottomAnchor, constant: 10),
             divider.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 15),
             divider.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -15),
             divider.heightAnchor.constraint(equalToConstant: 1),
-            divider.bottomAnchor.constraint(equalTo: creationTimeLabel.topAnchor, constant: -5),
+            divider.bottomAnchor.constraint(equalTo: creationTimeLabel.topAnchor, constant: -15),
+            
             creationTimeLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 15),
-          //  creationTimeLabel.topAnchor.constraint(equalTo: divider.bottomAnchor, constant: 5),
-            creationTimeLabel.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -10),
+            creationTimeLabel.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -15),
             
             statusImageView.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 20),
             statusImageView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -15),
