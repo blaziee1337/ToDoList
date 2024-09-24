@@ -6,3 +6,19 @@
 //
 
 import Foundation
+
+protocol TodoDetailInteractorProtocol: AnyObject {
+    func saveTodo(_ todo: ToDo)
+}
+
+final class TodoDetailInteractor: TodoDetailInteractorProtocol {
+    var coreDataManager: CoreDataManagerProtocol
+    
+    init(coreDataManager: CoreDataManagerProtocol) {
+        self.coreDataManager = coreDataManager
+    }
+    
+    func saveTodo(_ todo: ToDo) {
+        coreDataManager.saveLocalTodo(todo: [todo])
+    }
+}
