@@ -141,7 +141,7 @@ final class TodoDetailViewController: UIViewController, TodoDetailViewProtocol {
         if let existingTodo = self.todo {
             todoId = Int32(existingTodo.id)
         } else {
-            todoId = Int32(Int.random(in: 1...Int.max))
+            todoId = Int32(Int.random(in: 1...Int(Int32.max)))
         }
         
         let todo = ToDo(
