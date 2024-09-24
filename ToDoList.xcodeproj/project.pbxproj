@@ -27,6 +27,7 @@
 		656913D92CA3616C00B603A7 /* ToDoDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656913D82CA3616C00B603A7 /* ToDoDetailInteractor.swift */; };
 		656913DB2CA3628D00B603A7 /* ToDoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656913DA2CA3628D00B603A7 /* ToDoDetailView.swift */; };
 		656913DD2CA362C900B603A7 /* ToDoDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656913DC2CA362C900B603A7 /* ToDoDetailPresenter.swift */; };
+		656913DF2CA3630F00B603A7 /* ToDoDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656913DE2CA3630F00B603A7 /* ToDoDetailRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		656913D82CA3616C00B603A7 /* ToDoDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoDetailInteractor.swift; sourceTree = "<group>"; };
 		656913DA2CA3628D00B603A7 /* ToDoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoDetailView.swift; sourceTree = "<group>"; };
 		656913DC2CA362C900B603A7 /* ToDoDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoDetailPresenter.swift; sourceTree = "<group>"; };
+		656913DE2CA3630F00B603A7 /* ToDoDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoDetailRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +230,7 @@
 				656913D82CA3616C00B603A7 /* ToDoDetailInteractor.swift */,
 				656913DA2CA3628D00B603A7 /* ToDoDetailView.swift */,
 				656913DC2CA362C900B603A7 /* ToDoDetailPresenter.swift */,
+				656913DE2CA3630F00B603A7 /* ToDoDetailRouter.swift */,
 			);
 			path = ToDoDetail;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 				656913DD2CA362C900B603A7 /* ToDoDetailPresenter.swift in Sources */,
 				656913D62CA35FCF00B603A7 /* TaskButton.swift in Sources */,
 				656913C12CA352F600B603A7 /* NetworkService.swift in Sources */,
+				656913DF2CA3630F00B603A7 /* ToDoDetailRouter.swift in Sources */,
 				656913CC2CA3599700B603A7 /* ToDoListPresenter.swift in Sources */,
 				656913C32CA3537200B603A7 /* CoreDataManager.swift in Sources */,
 				6569138D2CA34F6400B603A7 /* SceneDelegate.swift in Sources */,
