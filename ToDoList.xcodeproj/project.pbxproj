@@ -11,7 +11,6 @@
 		6569138D2CA34F6400B603A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6569138C2CA34F6400B603A7 /* SceneDelegate.swift */; };
 		656913942CA34F6600B603A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 656913932CA34F6600B603A7 /* Assets.xcassets */; };
 		656913972CA34F6600B603A7 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 656913962CA34F6600B603A7 /* Base */; };
-		656913A22CA34F6600B603A7 /* ToDoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656913A12CA34F6600B603A7 /* ToDoListTests.swift */; };
 		656913AC2CA34F6600B603A7 /* ToDoListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656913AB2CA34F6600B603A7 /* ToDoListUITests.swift */; };
 		656913AE2CA34F6600B603A7 /* ToDoListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656913AD2CA34F6600B603A7 /* ToDoListUITestsLaunchTests.swift */; };
 		656913BE2CA3528E00B603A7 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656913BD2CA3528E00B603A7 /* ToDo.swift */; };
@@ -30,6 +29,10 @@
 		656913DF2CA3630F00B603A7 /* ToDoDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656913DE2CA3630F00B603A7 /* ToDoDetailRouter.swift */; };
 		656913E72CA3712300B603A7 /* LocalizedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656913E62CA3712300B603A7 /* LocalizedStrings.swift */; };
 		656913F12CA3802900B603A7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 656913EF2CA3802900B603A7 /* Localizable.strings */; };
+		656913F42CA3854E00B603A7 /* TodoListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656913F32CA3854E00B603A7 /* TodoListPresenterTests.swift */; };
+		656913F62CA3857900B603A7 /* MockTodoListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656913F52CA3857900B603A7 /* MockTodoListInteractor.swift */; };
+		656913F82CA3859F00B603A7 /* MockTodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656913F72CA3859F00B603A7 /* MockTodoListView.swift */; };
+		656913FA2CA385F100B603A7 /* MockTodoListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656913F92CA385F100B603A7 /* MockTodoListRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +60,6 @@
 		656913962CA34F6600B603A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		656913982CA34F6600B603A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6569139D2CA34F6600B603A7 /* ToDoListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		656913A12CA34F6600B603A7 /* ToDoListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListTests.swift; sourceTree = "<group>"; };
 		656913A72CA34F6600B603A7 /* ToDoListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		656913AB2CA34F6600B603A7 /* ToDoListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListUITests.swift; sourceTree = "<group>"; };
 		656913AD2CA34F6600B603A7 /* ToDoListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -79,6 +81,10 @@
 		656913EA2CA3781D00B603A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		656913F02CA3802900B603A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		656913F22CA3804300B603A7 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		656913F32CA3854E00B603A7 /* TodoListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListPresenterTests.swift; sourceTree = "<group>"; };
+		656913F52CA3857900B603A7 /* MockTodoListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTodoListInteractor.swift; sourceTree = "<group>"; };
+		656913F72CA3859F00B603A7 /* MockTodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTodoListView.swift; sourceTree = "<group>"; };
+		656913F92CA385F100B603A7 /* MockTodoListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTodoListRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,7 +148,8 @@
 		656913A02CA34F6600B603A7 /* ToDoListTests */ = {
 			isa = PBXGroup;
 			children = (
-				656913A12CA34F6600B603A7 /* ToDoListTests.swift */,
+				656913FB2CA38BDF00B603A7 /* Mocks */,
+				656913F32CA3854E00B603A7 /* TodoListPresenterTests.swift */,
 			);
 			path = ToDoListTests;
 			sourceTree = "<group>";
@@ -249,6 +256,16 @@
 				656913EF2CA3802900B603A7 /* Localizable.strings */,
 			);
 			path = Localizable;
+			sourceTree = "<group>";
+		};
+		656913FB2CA38BDF00B603A7 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				656913F52CA3857900B603A7 /* MockTodoListInteractor.swift */,
+				656913F72CA3859F00B603A7 /* MockTodoListView.swift */,
+				656913F92CA385F100B603A7 /* MockTodoListRouter.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,7 +424,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				656913A22CA34F6600B603A7 /* ToDoListTests.swift in Sources */,
+				656913FA2CA385F100B603A7 /* MockTodoListRouter.swift in Sources */,
+				656913F82CA3859F00B603A7 /* MockTodoListView.swift in Sources */,
+				656913F62CA3857900B603A7 /* MockTodoListInteractor.swift in Sources */,
+				656913F42CA3854E00B603A7 /* TodoListPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
